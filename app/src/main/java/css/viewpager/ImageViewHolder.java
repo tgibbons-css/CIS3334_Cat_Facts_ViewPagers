@@ -2,6 +2,7 @@ package css.viewpager;
 
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -10,9 +11,11 @@ import androidx.recyclerview.widget.RecyclerView;
 public class ImageViewHolder extends RecyclerView.ViewHolder{
 
     ImageView imageView;
+    TextView textViewCatFact;
 
     public ImageViewHolder(@NonNull View itemView) {
         super(itemView);
-        imageView = (ImageView) itemView.findViewById(R.id.imageView);
+        imageView = itemView.findViewById(R.id.imageView);
+        textViewCatFact = itemView.findViewById(R.id.textViewCatFact);
     }
 }

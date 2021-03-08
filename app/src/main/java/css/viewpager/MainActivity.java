@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Set up the ImagePageAdaoter similar to other RecycleView Adapters
         viewPage = (ViewPager2) findViewById(R.id.viewPagerMain);
-        ImagePagerAdapter adapter = new ImagePagerAdapter();
+        ImagePagerAdapter adapter = new ImagePagerAdapter(this.getApplicationContext());
         viewPage.setAdapter(adapter);
         adapter.notifyDataSetChanged();
 
